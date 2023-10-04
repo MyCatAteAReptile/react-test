@@ -1,17 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <App/>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+/*
+React 18 shipped March 29th, 2022. ReactDOM.render has been deprecated in React 18 and currently issues a warning and runs in a compatible mode.
+
+Deprecations
+
+react-dom: ReactDOM.render has been deprecated. Using it will warn and run your app in React 17 mode.
+react-dom: ReactDOM.hydrate has been deprecated. Using it will warn and run your app in React 17 mode.
+react-dom: ReactDOM.unmountComponentAtNode has been deprecated.
+react-dom: ReactDOM.renderSubtreeIntoContainer has been deprecated.
+react-dom/server: ReactDOMServer.renderToNodeStream has been deprecated.
+*/
